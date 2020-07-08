@@ -1,0 +1,118 @@
+
+
+.textbox input[type="text"],
+.textbox input[type="password"]
+{ width: 100%;
+    /* 원하는 너비 설정 */
+    height: auto;
+    /* 높이값 초기화 */
+    line-height : normal;
+    /* line-height 초기화 */
+    padding: .8em .5em;
+    /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+    font-family: inherit;
+    /* 폰트 상속 */
+    border: 1px solid #999; border-radius: 0;
+    /* iSO 둥근모서리 제거 */
+    outline-style: none;
+    /* 포커스시 발생하는 효과 제거를 원한다면 */
+    -webkit-appearance: none;
+    /* 브라우저별 기본 스타일링 제거 */
+    -moz-appearance: none; appearance: none;
+    width: 80%;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: inherit;
+    border-top: 1px solid #dee2e6;
+}
+.btn-block{
+    width: auto;
+}
+.shadow{
+    height: 7%;
+}
+
+.modal-dialog{
+    margin-top: 200px;
+    z-index: 1050;
+}
+.starR{
+    background: url('http://miuu227.godohosting.com/images/icon/ico_review.png') no-repeat right 0;
+    background-size: auto 100%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.starR.on{background-position:0 0;}
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: inherit;
+    border-top: 1px solid #dee2e6;
+}
+.clock {
+    color: #17D4FE;
+    font-family: none;
+    letter-spacing: 7px;
+    background: #0b2e13;
+    border-radius: 10em;
+    padding: 20px;
+    font-size: 71px;
+    width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.form-control{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    display: inherit;
+    font-size: 15px;
+}
+.form-control-xl{
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+    display: inherit;
+    font-size: 15px;
+}
+.form-control-xxl{
+    width: 600px;
+    height: 30px;
+    padding: 5px;
+    display: inherit;
+    font-size: 15px;
+}
+.float-lg-right{
+    margin-left: 10px;
+}
+.float-lg-left{
+    margin-right: 10px;
+}
+.float-left{
+    margin-right: 10px;
+}
+.well { background:#F6F6F6; padding: 20px; margin-bottom: 60px; }
+
+.vote-start-table{
+    font-size: 30px;
+}
+
+.select_box{
+    width:180px;
+    margin-top: 20px;
+}
+
+.sidebar .nav-link {
+    font-size: 16px;
+    padding: 12px;
+}
+.col-md-10 {
+    margin-left: 230px;
+}

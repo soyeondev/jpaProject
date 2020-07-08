@@ -1,0 +1,71 @@
+# Web server properties
+server:
+  port: 9091
+  servlet:
+    session:
+  # 24h동안 세션
+     timeout: 86400
+  # white error page 비활성화
+  error:
+    whitelabel:
+      enabled: false
+  # 파일 업로드 경로
+  upload:
+    dir: 
+
+# DataSource properties - development
+# DB 정보
+datasource:
+  url:
+  username:
+  password:
+  # slave db list
+  slave-list:
+    - name:
+      url:
+
+# Spring properties
+# bean객체를 overring할 수 있게 함
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    
+  # JSP
+  # contoller 에서 view이름을 String으로 리턴할 때 앞(prefix)과 뒤(suffix)에 붙음
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+    
+# JPA 
+jpa:
+  hibernate:
+  # Spring JPA / Hibernate 초기화 전략: ddl-auto, generate-ddl
+    ddl-auto: none # JPA 에서 DB를 초기화 시키지 않도록 설정
+  # Java의 Entity 설정을 참고하여 Spring Applicaton실행시점에 Hibernate에서 자동으로 DDL을 생성하여 필요한 Database의 Table설정들을 자동으로 수행해주는 기능
+  generate-ddl: false
+  show-sql: true  # 실행되는 SQL문을 보여줄지 설정
+00  database: mysql
+  database-platform: org.hibernate.dialect.MySQL5Dialect
+  properties:
+    hibernate:
+      enable_lazy_load_no_trans: true #지연로딩
+      format_sql: true
+  open-in-view: false
+  
+ #servlet
+servlet:
+  multipart:
+    # 업로드 파일 크기 제한
+    max-file-size: 50MB
+    max-request-size: 50MB
+    
+# Logging
+logging:
+  # DEBUG 상세한 정보. 보통 문제를 진단할 때만 필요
+  # INFO 예상대로 작동하는지에 대한 확인.
+  file: ./log
+  level:
+    com.example.demo: DEBUG
+    org.springframework.jdbc.datasource.SimpleDriverDataSource: INFO
+    org.hibernate.SQL: INFO
